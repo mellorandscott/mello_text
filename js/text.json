@@ -1,0 +1,99 @@
+{
+    "key": "542eae299d25a",
+    "name": "mello_text",
+    "label": "Text \/ HTML",
+    "display": "table",
+    "sub_fields": [
+        {
+            "key": "field_542eae8961672",
+            "label": "Layout",
+            "name": "layout",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 10,
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1col": "1 Column",
+                "2col": "2 Colums",
+                "improv": "Improved Readability"
+            },
+            "default_value": {
+                "": ""
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_558941ed75968",
+            "label": "Wrap",
+            "name": "wrap",
+            "type": "true_false",
+            "instructions": "Check Wrap box to put the text into wrapper",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 10,
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_542eaeb561673",
+            "label": "Text",
+            "name": "text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 40,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1
+        },
+        {
+            "key": "field_542eaee061674",
+            "label": "Text Column 2",
+            "name": "text_2",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_542eae8961672",
+                        "operator": "==",
+                        "value": "2col"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 40,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1
+        }
+    ],
+    "min": "",
+    "max": ""
+}

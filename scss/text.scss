@@ -1,0 +1,26 @@
+.text-column-1{
+	p{
+		padding: 1em;
+		
+	}
+}
+.text-column-2{
+	p{
+		padding: 0 1em 1em 1em;			
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop){
+
+	.text-column-1{
+		p{
+			padding: 2em 1em 2em 2em;
+			
+		}
+	}
+	.text-column-2{
+		p{
+			padding: 2em 2em 2em 1em;			
+		}
+	}
+}
